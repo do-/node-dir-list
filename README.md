@@ -1,7 +1,7 @@
 ![workflow](https://github.com/do-/node-dir-list/actions/workflows/main.yml/badge.svg)
 ![Jest coverage](./badges/coverage-jest%20coverage.svg)
 
-`dir-list` is a zero dependency node.js library implementing [file system](https://nodejs.org/api/fs.html) [iterators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) over given sets or root paths with functions as filtering conditions.
+`fs-iterators` is a zero dependency node.js library implementing [file system](https://nodejs.org/api/fs.html) [iterators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) over given sets or root paths with functions as filtering conditions.
 
 It features two classes: 
 * [DirList](https://github.com/do-/node-dir-list/wiki/DirList), the directory tree iterator;
@@ -9,12 +9,12 @@ It features two classes:
 
 # Installation
 ```sh
-npm install dir-list
+npm install fs-iterators
 ```
 
 # Usage
 ```js
-const {DirList} = require ('dir-list')
+const {DirList} = require ('fs-iterators')
 
 const myDir = new DirList ({
   root: ['/opt/myProject'], 
